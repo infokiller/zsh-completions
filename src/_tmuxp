@@ -150,9 +150,7 @@ __tmuxp_load() {
     (sessions)
       local s
       _alternative \
-        'sessions-user:user session:compadd -F line - ${tmuxp_dir}/*.(json|yml|yaml)(:r:t)' \
-        'sessions-other:session in current directory:_path_files -/ -g "**/.tmuxp.(yml|yaml|json)"' \
-        'sessions-other:session in current directory:_path_files -g "*.(yml|yaml|json)"'
+        'sessions-user:user session:compadd -F line - ${tmuxp_dir}/*.(json|yml|yaml)(:r:t)'
       ;;
   esac
 }
